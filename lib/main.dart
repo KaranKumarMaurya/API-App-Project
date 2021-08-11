@@ -45,6 +45,8 @@ class _HomePageState extends State<HomePage> {
               itemBuilder: (context, index) =>
                   customListTile(articles[index], context),
             );
+          }else{
+            return Center(child: Text("No Record Found",style: TextStyle(fontSize: 20),));
           }
 
           return Center(

@@ -12,8 +12,7 @@ class ApiServices {
   //and learn about the different Endpoint
   //for this example I'm going to use a single endpoint
 
-  final endPointUrl =
-      "https://newsapi.org/v2/everything?q=tesla&from=2021-07-11&sortBy=publishedAt&apiKey=958bac8bbc624b28adbf9e0c6de57118";
+  final endPointUrl ="https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=958bac8bbc624b28adbf9e0c6de57118";
 
   //HTTP request function
   Future<List<Article>> getArticle() async {
